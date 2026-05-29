@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 export default function SubjectNine() {
     return (
         <>
@@ -98,13 +99,27 @@ export default function SubjectNine() {
             <div className="main-container">
                 <div className="main-card">
                     <h1 className="title">All Subjects of Class 9</h1>
-                    <button className="class-btn bengali">Bengali</button>
-                    <button className="class-btn english">English</button>
-                    <button className="class-btn mathematics">Mathematics</button>
-                    <button className="class-btn life-science">Life Science</button>
-                    <button className="class-btn physical-science">Physical Science</button>
-                    <button className="class-btn history">History</button>
-                    <button className="class-btn geography">Geography</button>
+                    <Link to="/bengali">
+                        <button className="class-btn bengali">Bengali</button>
+                    </Link>
+                    <Link to="/english">
+                        <button className="class-btn english">English</button>
+                    </Link>
+                    <Link to="/mathematics">
+                        <button className="class-btn mathematics">Mathematics</button>
+                    </Link>
+                    <Link to="/life-science">
+                        <button className="class-btn life-science">Life Science</button>
+                    </Link>
+                    <Link to="/physical-science">
+                        <button className="class-btn physical-science">Physical Science</button>
+                    </Link>
+                    <Link to="/history">
+                        <button className="class-btn history">History</button>
+                    </Link>
+                    <Link to="/geography">
+                        <button className="class-btn geography">Geography</button>
+                    </Link>
                 </div>
             </div>
         </>
